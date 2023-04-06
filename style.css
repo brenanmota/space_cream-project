@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'staatliches';
+  --ff-main: 'staatliches', 'palanquin';
+
+  --fc-primary: #ffffff;
+
+  font-size: 62.5%;
+  /* when we put this percentage, we leave the base at 10, then we convert the values of (px) to (rem) and move only a comma.
+example: 40px = 4.0rem */
+  --fs-header: 4rem;
+  --fs-main: 2rem;
+}
+
+.page {
+  max-width: 40rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background: #8E9AAF;
+
+  font-family: var(--ff-heading);
+  color: var(--fc-primary);
+  font-weight: 400;
+  font-size: var(--fs-header);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+
+  height: 29rem;
+
+}
+
+.logo {
+  padding: 4.2rem;
+}
+
+.title {
+  background: #CBC0D3;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  position: absolute;
+
+  width: 40rem;
+  height: 4.9rem;
+  left: 0;
+  top: 22rem;
+}
+
+main {
+  font-family: var(--ff-main);
+  font-size: var(--fs-main);
+  background: #EFF1FF;
+  color: #23053A;
+  line-height: 1.5rem;
+  padding: 0 3.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.text {
+  padding: 2rem;
+  font-family: 'palanquin';
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.card p {
+  font-family: staatliches;
+  font-family: var(--ff-main);
+
+  color: #4A4E69;
+
+  background: #FEEAFA;
+  border-radius: 2.0rem;
+  width: 9.2rem;
+  height: 3.5rem;
+
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;  
+  position: absolute;
+
+  right: 2.5rem;
+  top: 1.5rem;
+}
