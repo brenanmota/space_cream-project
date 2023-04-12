@@ -33,22 +33,29 @@ header {
   letter-spacing: 2px;
   text-align: center;
   position: relative;
-
-  height: 29rem;
-
 }
 
 .logo {
   padding: 4.2rem;
 }
 
+.text {
+  padding: 2rem;
+  font-family: 'palanquin' !important;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.3rem;
+  font-size: 2.0rem;
+  background: #EFF1FF;
+  color: #23053A;
+  padding-bottom: 6rem;
+}
+
 .title {
   background: #CBC0D3;
   font-weight: 400;
   letter-spacing: 0.05rem;
-  position: absolute;
 
-  width: 40rem;
   height: 4.9rem;
   left: 0;
   top: 22rem;
@@ -65,13 +72,6 @@ main {
   gap: 1rem;
 }
 
-.text {
-  padding: 2rem;
-  font-family: 'palanquin';
-  font-weight: 400;
-  text-align: center;
-  line-height: 2.3rem;
-}
 
 .card {
   position: relative;
@@ -112,6 +112,7 @@ main {
     transform: translateY(-10px);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0);
     opacity: 0;
@@ -123,8 +124,28 @@ main {
     transform: translateY(-30px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@media (min-width: 700px) {
+  :root {
+    --fs-header: 4.8rem;
+  }
+
+  .page {
+    max-width: 128rem;
+    display: grid;
+    grid-template-areas: "A B B";
+  }
+
+  .text {
+    color:#ffffff;
+    background: #8E9AAF;
+    padding-top: 10rem;
+  }
+
 }
