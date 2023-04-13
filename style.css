@@ -140,9 +140,7 @@ main {
   }
 
   .page {
-    display: grid;
-    grid-template-areas: "A B B";
-    width: 100%;
+    display: flex;
   }
 
   .text {
@@ -150,7 +148,6 @@ main {
     background: #8E9AAF;
     padding-top: 10rem;
   }
-
 
   main {
     grid-template-areas: "A B C"
@@ -178,15 +175,4 @@ main {
     border: 2px solid #CBC0D3;;
     border-radius: 24px;
   }
-
-  .footer {
-    display: block;
-  }
-
-  .footer a {
-    font-weight: bold;
-    color: #4A4E69;
-    text-decoration: none;
-  }
-
 }
